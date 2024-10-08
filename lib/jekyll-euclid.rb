@@ -1,5 +1,3 @@
-require "jekyll"
-
 require File.expand_path('jekyll/converters/euclid', File.dirname(__FILE__))
 
 module Jekyll
