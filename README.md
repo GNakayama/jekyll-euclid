@@ -1,28 +1,28 @@
 # Jekyll::Euclid
-
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/euclid`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a Jekyll converter that converts .euclid files before they are processed by Jekyll. The converter offers a very simple way to write theorems, proofs, and other mathematical content in a Jekyll site. The converter is still under development and it is being based on LaTeX theoremsi.
 
 ## Installation
-
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
 
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle add jekyll-euclid
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+gem install jekyll-euclid
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the converter, add the following to the `_config.yml` file:
+
+```yaml
+plugins:
+  - jekyll-euclid
+```
 
 ## Development
 
@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-euclid.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gnakayama/jekyll-euclid.
 
 ## License
 
