@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["gui@tonkatsuengineering.com"]
 
   spec.summary = "Preprocess .euclid files."
-  spec.description = "This is a very simple attempt trying to mimic some of the behaviour found in LaTex theoremsi system."
+  spec.description = "This is a simple attempt trying to copy some of the behaviour found in LaTex theoremsi system."
   spec.homepage = "https://github.com/GNakayama/jekyll-euclid"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
