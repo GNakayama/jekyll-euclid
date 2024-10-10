@@ -16,10 +16,10 @@ module Jekyll
       end
 
       def parser(content)
-        content = Jekyll::Euclid::AxiomParser.new.replace_all(content)
-        content = Jekyll::Euclid::DefinitionParser.new.replace_all(content)
-        content = Jekyll::Euclid::ProofParser.new.replace_all(content)
-        Jekyll::Euclid::TheoremParser.new.replace_all(content)
+        content = Jekyll::Euclid::Parser::AxiomParser.new.parse(content)
+        content = Jekyll::Euclid::Parser::DefinitionParser.new.parse(content)
+        content = Jekyll::Euclid::Parser::ProofParser.new.parse(content)
+        Jekyll::Euclid::Parser::TheoremParser.new.parse(content)
       end
 
       def convert(content)

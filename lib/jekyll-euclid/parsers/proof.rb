@@ -2,16 +2,18 @@
 
 module Jekyll
   module Euclid
-    # ProofParser class for parsing proof tags
-    class ProofParser < BaseParser
-      def initialize
-        super("Proof", "\\proof")
-      end
+    module Parser
+      # ProofParser class for parsing proof tags
+      class ProofParser < BaseParser
+        def initialize
+          super("Proof", "\\proof")
+        end
 
-      def replace(content)
-        @counter += 1
+        def replace(content)
+          @counter += 1
 
-        "*#{@name}.* #{content[@size..-6].strip}"
+          "*#{@name}.* #{content[@size..-6].strip}"
+        end
       end
     end
   end

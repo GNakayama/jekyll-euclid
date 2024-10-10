@@ -9,3 +9,6 @@ Style/StringLiteralsInInterpolation:
 
 Naming/FileName:
   Enabled: false
+
+Metrics/BlockLength:
+  AllowedMethods: ['describe',]

@@ -2,10 +2,12 @@
 
 module Jekyll
   module Euclid
-    # DefinitionParser class for parsing definition tags
-    class DefinitionParser < BaseParser
-      def initialize
-        super("Definition", "\\definition")
+    module Parser
+      # DefinitionParser class for parsing definition tags
+      class DefinitionParser < BaseParser
+        def initialize
+          super("Definition", "\\definition")
+        end
       end
     end
   end
