@@ -11,8 +11,8 @@ RSpec.describe Jekyll::Euclid::Parser::ProofParser do
       \\end
     CONTENT
 
-    converter = Jekyll::Converters::EuclidConverter.new
+    parser = Jekyll::Euclid::Parser::ProofParser.new
 
-    expect(converter.parser(content)).to eq("*Proof.* This is a proof.\n*Proof.* This is another proof.\n")
+    expect(parser.parse(content)).to eq("*Proof.* This is a proof.\n*Proof.* This is another proof.\n")
   end
 end

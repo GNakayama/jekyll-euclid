@@ -82,14 +82,14 @@ module Jekyll
 
         def parse(content)
           @counter = 0
+          @corollary_counter = 0
 
           term_index, end_index, term = get_term_indexes([@theorem_term, @lemma_term, @corollary_term], content)
-
-          term != "\\corollary" && @corollary_counter = 0
 
           while term_index >= 0
             content = patch_content(content, term_index, end_index, term)
             term_index, end_index, term = get_term_indexes([@theorem_term, @lemma_term, @corollary_term], content)
+            term != "\\corollary" && @corollary_counter = 0
           end
 
           content

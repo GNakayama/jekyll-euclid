@@ -11,4 +11,4 @@ Naming/FileName:
   Enabled: false
 
 Metrics/BlockLength:
-  AllowedMethods: ['describe',]
+  AllowedMethods: ['describe', 'it']
